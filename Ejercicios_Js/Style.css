@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background: radial-gradient(circle, pink, purple);
+  color: #000;
+  font-size: 16px;
+  font-family: "Poppins";
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff85;
+  max-width: 80%;
+  border-radius: 20px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0px 0px 10px 0px #333;
+}
+
+.container li {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form h2 {
+  font-size: 1.8rem;
+}
+
+form input {
+  width: 22em;
+  height: 40px;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  text-align: start;
+  padding: 0px 20px;
+  padding-right: 6em;
+  border-radius: 20px;
+  border: none;
+}
+
+form .btn {
+  background-color: purple;
+  color: #fff;
+  width: 5.5em;
+  height: 40px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.btn:hover {
+  background-color: #5a025a;
+  font-weight: bold;
+  width: 6.5em;
+}
+
+.buttons {
+  display: flex;
+  width: auto;
+  position: relative;
+}
+
+.form-control li {
+  font-size: 1.1rem;
+}
+
+form label {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.questions {
+  padding: 0px 20px;
+  margin: 15px 0px;
+}
+
+.form-questions input {
+  padding-right: 6.5em;
+}
+
+.form-variables {
+  display: none;
+}
+
+.form-bucles {
+  display: none;
+}

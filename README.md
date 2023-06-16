@@ -8,4 +8,4 @@ Sigueme **[Click aqui](https://github.com/JHome-1404/)**
 
 🍔 ¿Me invítas una Hamburguesa? **[Click Aqui](https://www.paypal.com/paypalme/JesusHome1404)**
 
-![Hambuguer🍔](/Img/6255e2e41db6c.jpeg)
+<!-- ![Hambuguer🍔](/Img/6255e2e41db6c.jpeg) -->
