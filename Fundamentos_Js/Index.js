@@ -1,8 +1,6 @@
 // # VALIDACION DE ENTRADA
 const form = document.querySelector(".form");
 const input_form = document.querySelector(".input-form");
-const btn_submit = document.querySelector(".submit");
-const btn_reset = document.querySelector(".reset");
 
 // $ ELECCION
 form.addEventListener("submit", () => {
@@ -97,7 +95,7 @@ const ejercicio_3 = () => {
     return;
   }
   if (answer < 0) {
-    alert("Escribe un numero mayor Positivo");
+    alert("Escribe un numero Positivo");
     return;
   }
   // $ Ejercicio
@@ -161,7 +159,7 @@ const ejercicio_6 = () => {
     return;
   }
   if (answer < 0) {
-    alert("Escribe un numero mayor Positivo");
+    alert("Escribe un numero Positivo");
     return;
   }
   // $ Ejercicio
@@ -176,7 +174,9 @@ const ejercicio_6 = () => {
 
 // !7 Crea una función que tome dos fechas como argumentos y devuelva el número de días que hay entre ellas.
 
-const ejercicio_7 = () => {};
+const ejercicio_7 = () => {
+  alert("Sorry =( Ni idea de como resolver este ejercicio");
+};
 
 // *8 Crea una función que tome un array de strings como argumento y devuelva un nuevo array con la longitud de cada string.
 
@@ -265,11 +265,54 @@ const ejercicio_11 = () => {
   alert(`Viejo array: ${oldArray}, Nuevo array: ${newArray}`);
 };
 
-// !12.Crea una función que tome dos strings como argumentos y devuelva true si son iguales (sin importar mayúsculas o minúsculas) o false si son diferentes.
+// *12.Crea una función que tome dos strings como argumentos y devuelva true si son iguales (sin importar mayúsculas o minúsculas) o false si son diferentes.
 
-// !13 Crea una función que tome un array de objetos y un string como argumentos y devuelva un nuevo array con todos los objetos que contienen una propiedad con ese string como clave.
+const ejercicio_12 = () => {
+  // $ Variables
+  let cadena_1 = prompt("Escribe una cadena de texto");
+  let cadena_2 = prompt("Escribe otra cadena de texto");
+  // $ Ejercicio
+  if (cadena_1.toLowerCase() == cadena_2.toLowerCase()) {
+    alert(`La cadena ${cadena_1} es igual a ${cadena_2} sin importar mayusculas o minusculas`);
+  } else {
+    alert(`La cadena ${cadena_1} NO es igual a ${cadena_2} sin importar mayusculas o minusculas`);
+  }
+};
 
-// !14 Crea una función que tome un array de números como argumento y devuelva true si todos los números son pares o false si alguno es impar
+// *13 Crea una función que tome un array de objetos y un string como argumentos y devuelva un nuevo array con todos los objetos que contienen una propiedad con ese string como clave.
+
+// $ Variables
+const arrayObjetos = [
+  { nombre: "Objeto 1", edad: 20 },
+  { nombre: "Objeto 2", ciudad: "Barcelona" },
+  { nombre: "Objeto 3", edad: 30 },
+  { nombre: "Objeto 4", profesion: "Programador" },
+];
+
+// $ Funcion
+const filterArray = (array, clave) => {
+  return array.filter((objeto) => {
+    return objeto.hasOwnProperty(clave);
+  });
+};
+
+const ejercicio_13 = () => {
+  // $ Ejercicio
+  alert(`Lista de array con objetos:
+  const arrayObjetos = [
+    { nombre: "Objeto 1", edad: 20 },
+    { nombre: "Objeto 2", ciudad: "Barcelona" },
+    { nombre: "Objeto 3", edad: 30 },
+    { nombre: "Objeto 4", profesion: "Programador" },
+  ];
+  `);
+  let answer = prompt("Escribe la llave del objeto que deseas buscar");
+  const resultado = filterArray(arrayObjetos, answer);
+  alert("Revisa la consola");
+  console.log(resultado);
+};
+
+// *14 Crea una función que tome un array de números como argumento y devuelva true si todos los números son pares o false si alguno es impar
 
 const ejercicio_14 = () => {
   // $ Variables
@@ -281,7 +324,7 @@ const ejercicio_14 = () => {
     return;
   }
   if (answer < 0) {
-    alert("Escribe un numero mayor Positivo");
+    alert("Escribe un numero Positivo");
     return;
   }
   // $ Ejercicio
@@ -291,14 +334,14 @@ const ejercicio_14 = () => {
   }
   let control = true;
   for (let i = 0; i < array.length; i++) {
-    if (i % 2 == 0) {
+    if (array[i] % 2 !== 0) {
       control = false;
       break;
     }
   }
   if (control == true) {
-    console.log(control);
+    alert(control);
   } else {
-    console.log(control);
+    alert(control);
   }
 };
